@@ -4,7 +4,7 @@ class DogDownloader:
     def __init__(self, breed):
         self.breed = breed
         self.sub_breeds = []
-        self.url=f"https://dog.ceo/api/breed/{breed}"
+        self.url = f"https://dog.ceo/api/breed/{breed}"
 
     def get_sub_breeds(self):
         res = requests.get(f'{self.url}/list')
